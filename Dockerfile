@@ -4,7 +4,7 @@ ADD https://storage.googleapis.com/kubernetes-release/release/v1.7.7/bin/linux/a
 
 RUN \
 chmod +x /usr/local/bin/kubectl ;\
-apk --no-cache add git openssl python py-pip bash gettext \
+apk --no-cache add git openssl python py-pip bash gettext jq \
 && pip install --upgrade \
   pip \
   awscli \
